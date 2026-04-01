@@ -6,6 +6,13 @@ This project focuses on clean design, smooth user experience, and simple client-
 
 ---
 
+## 🚀 Live Demo
+
+👉 https://eyadho.github.io/Login-Sign-Up/
+
+---
+
+
 ## ✨ Features
 
 * 🔄 Smooth switch between **Sign In** and **Sign Up**
@@ -22,12 +29,6 @@ This project focuses on clean design, smooth user experience, and simple client-
 * HTML5
 * CSS3 (Flexbox + Animations)
 * JavaScript (Vanilla JS)
-
----
-
-## 🚀 Live Demo
-
-👉 https://webb24-js2-slutprojekt
 
 ---
 
