@@ -1,0 +1,145 @@
+/* Reset and basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f7f7f7, #e8e4e1);
+}
+
+/* Container */
+.container {
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Card styling */
+.card {
+    background-color: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+
+/* Tabs */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.tab-buttons button.active {
+    border-bottom: 2px solid #ff8500;
+    font-weight: bold;
+}
+
+/* Forms */
+.form {
+    display: none;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.form.active {
+    display: flex;
+}
+
+/* Form header */
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form inputs */
+.form input, .form select {
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.form input:focus, .form select:focus {
+    border-color: #ff8500;
+    box-shadow: 0 0 5px #ff8500;
+}
+
+/* Form groups (two inputs side by side) */
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input, .form-group select {
+    flex: 1;
+}
+
+/* Buttons */
+.form button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff8500;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background-color: #e37300;
+}
+
+/* Form footer */
+.form-footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-footer span {
+    color: #ff8500;
+    cursor: pointer;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .form-group {
+        flex-direction: column;
+    }
+    .card {
+        padding: 20px;
+    }
+}
